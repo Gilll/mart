@@ -1,0 +1,106 @@
+.section-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.section-bg img {
+  width: 100%;
+  height: 0;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.section-container {
+  position: relative;
+  z-index: 2;
+}
+
+.pg-active .section-bg img {
+  height: 100%;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+}
+
+.header a {
+  color: #140E0A;
+  transition: 0.5s;
+}
+.header.white a {
+  color: #FFFEF8;
+  transition: 0.5s;
+}
+
+.animation-button-height {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  transition: 0.2s linear;
+}
+
+.pg-active .animation-button-height {
+  height: 37.1rem;
+  transition: 1s ease-in-out;
+}
+
+.animation-slide-up {
+  transform: translateY(100%);
+  transition: all 0.3s ease-in-out;
+}
+.animation-slide-up__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.pg-active .animation-slide-up {
+  transform: translateY(0);
+  transition-duration: 0.5s;
+  transition: all 0.5s ease-in-out;
+}
+
+.animation-slide-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.animation-slide-down__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.pg-active .animation-slide-down {
+  transform: translateY(0);
+  transition-duration: 0.5s;
+  transition: all 0.5s ease-in-out;
+}
+
+.animation-slide-right {
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.animation-slide-right__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.pg-active .animation-slide-right {
+  transform: translateX(0);
+  transition-duration: 0.5s;
+  transition: all 0.5s ease-in-out;
+}
+
+.pg-active .animation-delay-05 {
+  transition-delay: 0.5s !important;
+}
+
+.pg-active .animation-delay-1 {
+  transition-delay: 1s !important;
+}
+
+/*# sourceMappingURL=animations.css.map */

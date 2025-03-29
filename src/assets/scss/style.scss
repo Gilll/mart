@@ -1,0 +1,130 @@
+$primary-dark-color: #140E0A;
+$primary-light-color: #FFFEF8;
+$vh: calc(100vh/900);
+
+body {
+  color: $primary-dark-color;
+  background-color: $primary-light-color;
+  line-height: 1.28;
+  font-size: 2rem;
+}
+
+a {
+  color: $primary-dark-color;
+  a:visited {
+    color: $primary-dark-color;
+  }
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  margin-top: 2rem;
+  width: 100%;
+  &__container {
+    width: 172.8rem;
+    margin: 0 auto;
+  }
+  &__menu {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 0.12em;
+    & ul {
+      display: flex;
+    }
+    &-item {
+      margin-right: 5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+section {
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-view {
+  &__container {
+    position: relative;
+  }
+  &__top-holder {
+    min-height: 7rem;
+    height: $vh * 131;
+  }
+  &__title {
+    margin-top: 16rem;
+    margin-left: 38.8rem;
+    font-size: 7.2rem;
+    font-family: 'Forum', serif;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $primary-light-color
+  }
+  &__button-anchor {
+    position: absolute;
+    z-index: 3;
+    left: 9.5rem;
+    top: -16rem;
+  }
+}
+
+.round-button {
+  margin-top: 0;
+  margin-left: 0;
+  width: 36.9rem;
+  height: 36.9rem;
+  border-radius: 50%;
+  border: 0.1rem solid rgba(255, 254, 248, 0.4);
+  transition: 0.2s linear;
+  cursor: pointer;
+  &:hover {
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+    width: 32rem;
+    height: 32rem;
+    transition: 0.2s linear;
+  }
+}
+
+.isLoading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#loading-section {
+  display: none;
+}
+
+.isLoading #loading-section {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: $primary-light-color;
+}
+
+.header__c-logo-top {
+  height: 3.5rem;
+}
+
+.header__c-logo-middle {
+  height: 1rem;
+}
+
+.header__c-logo-bottom {
+  height: 1rem;
+}
