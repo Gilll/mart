@@ -1,0 +1,19 @@
+{
+  "name": "mart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/assets/scss src/assets/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "swiper": "^11.2.6"
+  }
+}
